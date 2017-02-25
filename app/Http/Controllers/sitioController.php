@@ -8,11 +8,11 @@ class sitioController extends Controller
 {
     public function index()
     {
-        echo "Hola mundo";
+        return view('sitio/index');
     }
 
     public function saludar (Request $request, $nombre)
     {
-        echo"Hello" . $nombre;
+       return view('sitio/saludo',['elnombre' => $nombre]);
     }
 }
